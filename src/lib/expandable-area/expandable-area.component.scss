@@ -1,0 +1,45 @@
+.ep-collapse-title {
+  opacity: 0.9;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.33;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  padding-right: 28px;
+  margin: 15px 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      right: 0;
+      transform: rotate(-90deg);
+  }
+}
+
+.ep-collapse-area {
+  margin: 15px 0;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+:host.active {
+  .ep-collapse-area {
+      display: block;
+  }
+
+  .ep-collapse-title {
+      img {
+        transform: rotate(0);
+      }
+  }
+}
