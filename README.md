@@ -41,5 +41,12 @@ import { AppComponent }         from './app.component';
 export class AppModule { }
 ```
 
+Use in template:
+```html
+<ng-expandable-area [title]="Title of expandabel section" [opened]="true || false">
+<!--Your content-->
+</ng-expandable-area>
+```
+
 ## License
 [MIT License]
